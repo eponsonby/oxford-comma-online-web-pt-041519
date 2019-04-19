@@ -1,8 +1,8 @@
 def oxford_comma(array)
   if array.length == 1
-    return array.join
+    array.join
     elsif array.length == 2
-      return array.insert(-2, "and").join(" ")
+      array.insert(-2, "and").join(" ")
         else 
           array_with_and = array.insert(-2, "and")
           string_no_last_element = array_with_and[0..-2].join(", ")
